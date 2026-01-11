@@ -7,3 +7,4 @@ node_modules/
 
 # Firebase Admin secret (VERY IMPORTANT)
 scripts/serviceAccountKey.json
+.vercel
