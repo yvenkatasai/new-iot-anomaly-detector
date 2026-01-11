@@ -1,0 +1,612 @@
+# Detailed Premium Website Prompt for AI Coding Tool
+
+```
+Create an ultra-premium, enterprise-grade IoT monitoring dashboard called "Sensor Sentinel" with cutting-edge visual design and animations.
+
+## 🎨 VISUAL DESIGN SYSTEM
+
+### Color Palette (Premium Dark Theme):
+**Base Colors:**
+- Background Primary: #0a0e27 (Deep Space Blue)
+- Background Secondary: #131729 (Midnight Blue)
+- Background Tertiary: #1a1f3a (Dark Navy)
+
+**Accent Colors:**
+- Primary Accent: #3b82f6 (Electric Blue)
+- Secondary Accent: #06b6d4 (Cyan)
+- Tertiary Accent: #8b5cf6 (Purple)
+- Success: #10b981 (Emerald)
+- Warning: #f59e0b (Amber)
+- Critical: #ef4444 (Red)
+- Info: #6366f1 (Indigo)
+
+**Gradients:**
+- Hero Gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
+- Card Gradient: linear-gradient(145deg, rgba(59,130,246,0.1) 0%, rgba(139,92,246,0.1) 100%)
+- Glow Gradient: radial-gradient(circle, rgba(59,130,246,0.4), transparent 70%)
+- Background Mesh: Animated gradient mesh with blue, purple, and cyan
+- Border Gradient: linear-gradient(90deg, #3b82f6, #8b5cf6, #06b6d4)
+
+### Typography System:
+**Fonts:**
+- Primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif
+- Display: 'Outfit' or 'Space Grotesk' for headings
+- Monospace: 'JetBrains Mono' for data/code elements
+
+**Font Sizes:**
+- Mega Display: 4rem (64px) - for hero numbers
+- Display: 3rem (48px) - for main headings
+- Heading 1: 2.5rem (40px)
+- Heading 2: 2rem (32px)
+- Heading 3: 1.5rem (24px)
+- Body Large: 1.125rem (18px)
+- Body: 1rem (16px)
+- Small: 0.875rem (14px)
+- Tiny: 0.75rem (12px)
+
+**Font Weights:**
+- Light: 300
+- Regular: 400
+- Medium: 500
+- Semibold: 600
+- Bold: 700
+- Black: 900 (for emphasis)
+
+## 🏗️ LAYOUT STRUCTURE
+
+### Header Section:
+```
+┌─────────────────────────────────────────────────┐
+│ 🛡️ Sensor Sentinel    [NEXUS ACTIVE] [⏸️ PAUSE] │
+│    IoT Anomaly Detection V4.0                   │
+└─────────────────────────────────────────────────┘
+```
+
+**Header Specifications:**
+- Fixed position with backdrop blur (blur(20px))
+- Height: 120px
+- Logo: Shield icon with gradient fill + glow effect
+- Brand name: Bold, 2.5rem, gradient text effect
+- Tagline: 1rem, 60% opacity, letter-spacing: 2px
+- Status buttons: Glassmorphism style with animated borders
+- Add subtle shadow that increases on scroll
+- Animated gradient border bottom (1px, moving left to right)
+
+### Metrics Grid Section:
+```
+┌──────────┬──────────┬──────────┬──────────┐
+│ PROCESSED│  TOTAL   │   SYNC   │   MEAN   │
+│  NODES   │ANOMALIES │   RATE   │   FLUX   │
+│    50    │    0     │  0.00%   │  25.14   │
+│ +12.6%   │ Critical │ Optimal  │  -2.4%   │
+└──────────┴──────────┴──────────┴──────────┘
+```
+
+**Card Specifications (Each):**
+- Dimensions: Auto-width, min-height: 180px
+- Background: Glassmorphism effect
+  - background: rgba(255, 255, 255, 0.05)
+  - backdrop-filter: blur(20px) saturate(180%)
+  - border: 1px solid rgba(255, 255, 255, 0.1)
+- Border radius: 24px
+- Padding: 32px
+- Box shadow: 
+  - Default: 0 8px 32px rgba(0, 0, 0, 0.3)
+  - Hover: 0 16px 48px rgba(59, 130, 246, 0.3)
+- Grid gap: 24px
+- Responsive: 4 columns desktop, 2 tablet, 1 mobile
+
+**Card Content Layout:**
+- Label: Uppercase, 11px, letter-spacing 1.5px, opacity 0.6
+- Main number: 4rem, bold (900), gradient text or solid white
+- Badge: Positioned top-right, pill shape, animated pulse
+- Icon (optional): Top-left, 32px, with glow effect
+
+### Chart Section:
+```
+┌─────────────────────────────────────────────────┐
+│ Signal Topology                          🔴 LIVE│
+│ ENCRYPTED DATA LINK: SENSOR_01_FEED            │
+│                                                 │
+│        [Animated Waveform Chart]                │
+│                                                 │
+└─────────────────────────────────────────────────┘
+```
+
+**Chart Container:**
+- Width: 100%, Max-width: 1400px
+- Height: 450px
+- Background: Same glassmorphism as cards
+- Padding: 40px
+- Border radius: 24px
+- Margin-top: 48px
+
+**Chart Styling:**
+- Line: 3px width, smooth curves (tension: 0.4)
+- Line color: Gradient from #3b82f6 to #06b6d4
+- Fill: Gradient with opacity (rgba(59,130,246,0.2) to transparent)
+- Grid lines: rgba(255,255,255,0.05), 1px, dashed
+- Axis labels: 12px, 50% opacity
+- Tooltip: Glassmorphism card with data details
+- Animation: Draw line on load (2s duration), continuous subtle pulse
+
+## ✨ ADVANCED ANIMATIONS & EFFECTS
+
+### Background Animations:
+1. **Animated Gradient Mesh:**
+   ```css
+   - Create 3-4 large gradient circles (500px+)
+   - Animate position slowly (60s duration, infinite)
+   - Use blur(100px) on circles
+   - Opacity: 0.15-0.3
+   - Colors: Blue, purple, cyan gradients
+   ```
+
+2. **Particle Grid:**
+   ```css
+   - Subtle dot grid pattern (2px dots, 40px spacing)
+   - Opacity: 0.03
+   - Optional: Animate opacity pulsing
+   ```
+
+3. **Scan Line Effect:**
+   ```css
+   - Thin horizontal line (1px height)
+   - Gradient: transparent to cyan to transparent
+   - Animate from top to bottom (20s duration)
+   - Opacity: 0.2
+   ```
+
+### Card Hover Effects:
+```css
+.metric-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 
+    0 20px 60px rgba(59, 130, 246, 0.4),
+    0 0 0 1px rgba(59, 130, 246, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(59, 130, 246, 0.5);
+  
+  /* Glow effect */
+  &::before {
+    opacity: 1;
+    filter: blur(40px);
+  }
+}
+
+/* Animated border gradient on hover */
+.metric-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  padding: 2px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #06b6d4);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, 
+                linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: rotate-border 3s linear infinite;
+}
+```
+
+### Number Counter Animation:
+```javascript
+// Animate numbers counting up on page load
+- Duration: 2s
+- Easing: ease-out
+- Include decimal precision
+- Add "+" or "-" with color coding
+```
+
+### Badge Animations:
+```css
+.badge {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    opacity: 1; 
+    box-shadow: 0 0 0 0 currentColor;
+  }
+  50% { 
+    opacity: 0.9;
+    box-shadow: 0 0 0 8px transparent;
+  }
+}
+```
+
+### Live Indicator:
+```css
+.live-indicator {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.live-dot {
+  width: 10px;
+  height: 10px;
+  background: #ef4444;
+  border-radius: 50%;
+  animation: live-pulse 1.5s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.8);
+}
+
+@keyframes live-pulse {
+  0%, 100% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% { 
+    transform: scale(1.3);
+    opacity: 0.7;
+  }
+}
+```
+
+### Button Interactions:
+```css
+.button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Ripple effect on click */
+.button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.button:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Hover glow */
+.button:hover {
+  box-shadow: 
+    0 0 20px rgba(59, 130, 246, 0.5),
+    inset 0 0 20px rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px);
+}
+```
+
+## 📊 CHART ENHANCEMENTS
+
+### Waveform Specifications:
+```javascript
+{
+  type: 'line',
+  data: {
+    // Generate smooth wave pattern
+    labels: Array(50).fill('').map((_, i) => i),
+    datasets: [{
+      data: // Sine wave with random variation
+      borderColor: gradient, // Blue to cyan
+      borderWidth: 3,
+      fill: true,
+      backgroundColor: gradient with alpha,
+      tension: 0.4, // Smooth curves
+      pointRadius: 0, // No dots
+      pointHitRadius: 10 // But clickable area
+    }]
+  },
+  options: {
+    animation: {
+      duration: 2000,
+      easing: 'easeInOutQuart'
+    },
+    plugins: {
+      tooltip: {
+        enabled: true,
+        backgroundColor: 'rgba(10, 14, 39, 0.95)',
+        backdropFilter: 'blur(10px)',
+        padding: 16,
+        borderColor: 'rgba(59, 130, 246, 0.5)',
+        borderWidth: 1
+      }
+    }
+  }
+}
+
+// Real-time update simulation
+setInterval(() => {
+  // Add new data point
+  // Remove oldest point
+  // Animate transition
+}, 1000);
+```
+
+### Grid Styling:
+- Primary grid lines: rgba(255, 255, 255, 0.05)
+- Secondary grid lines: rgba(255, 255, 255, 0.02)
+- Animated Y-axis labels fade in/out
+- X-axis with time stamps
+
+## 🦶 FOOTER SECTION
+
+### Layout:
+```
+┌─────────────────────────────────────────────────┐
+│                                                 │
+│           🛡️ Sensor Sentinel                    │
+│     Enterprise IoT Anomaly Detection            │
+│                                                 │
+│  [LinkedIn] [Twitter] [GitHub] [Email]          │
+│                                                 │
+│  📧 iot_anomali_detector@gmail.com             │
+│  📍 Securing IoT Networks Worldwide             │
+│  📞 24/7 Monitoring & Support                   │
+│                                                 │
+│  © 2026 Sensor Sentinel. All rights reserved.  │
+│  Privacy Policy | Terms of Service | Docs       │
+└─────────────────────────────────────────────────┘
+```
+
+**Footer Specifications:**
+- Margin-top: 120px
+- Padding: 80px 40px 40px
+- Background: linear-gradient(180deg, transparent, rgba(10, 14, 39, 0.5))
+- Border-top: 1px solid rgba(59, 130, 246, 0.2)
+- Border-top glow effect
+
+**Content Styling:**
+- Logo section: Centered, 32px icon, 1.5rem text
+- Social icons: 40px size, hover scale + glow
+- Email: Large (1.25rem), monospace font, clickable with hover effect
+- Links: Opacity 0.6, hover opacity 1, transition 0.3s
+- Copyright: 14px, opacity 0.5
+
+## 🎭 MICRO-INTERACTIONS
+
+### Scroll Animations:
+```javascript
+// Fade in elements as they enter viewport
+- Cards: Fade + slide up (stagger 100ms each)
+- Chart: Fade + scale from 0.95 to 1
+- Footer: Fade in when near bottom
+```
+
+### Loading State:
+```css
+/* Skeleton screens while loading */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.05) 25%,
+    rgba(255,255,255,0.1) 50%,
+    rgba(255,255,255,0.05) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+```
+
+### Cursor Effects:
+```css
+/* Custom cursor on interactive elements */
+- Pointer with subtle glow
+- Scale on hover
+- Color change based on element type
+```
+
+## 📱 RESPONSIVE DESIGN
+
+### Breakpoints:
+```css
+- Desktop: 1440px+ (4-column grid)
+- Laptop: 1024px - 1439px (4-column grid, smaller padding)
+- Tablet: 768px - 1023px (2-column grid)
+- Mobile: 320px - 767px (1-column stack)
+```
+
+### Mobile Optimizations:
+- Reduce font sizes by 20%
+- Stack header elements vertically
+- Full-width cards with 16px margins
+- Chart height: 300px
+- Reduce animation complexity
+- Touch-friendly tap targets (min 44px)
+
+## 🔧 TECHNICAL IMPLEMENTATION
+
+### HTML Structure:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sensor Sentinel - IoT Anomaly Detection</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="background-effects">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+    <div class="grid-pattern"></div>
+    <div class="scan-line"></div>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <header class="header">
+      <!-- Header content -->
+    </header>
+
+    <main>
+      <section class="metrics-grid">
+        <!-- 4 metric cards -->
+      </section>
+
+      <section class="chart-container">
+        <!-- Chart -->
+      </section>
+
+      <section class="features">
+        <!-- Optional: Add feature highlights -->
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- Footer content -->
+    </footer>
+  </div>
+</body>
+</html>
+```
+
+### CSS Architecture:
+```css
+/* Reset & Base */
+:root {
+  /* Color variables */
+  /* Spacing scale */
+  /* Typography scale */
+  /* Animation timings */
+}
+
+* { /* Reset */ }
+
+/* Layout */
+.container { /* Max-width, center */ }
+
+/* Components */
+.glass-card { /* Reusable glassmorphism */ }
+.gradient-text { /* Reusable gradient text */ }
+.glow-effect { /* Reusable glow */ }
+
+/* Animations */
+@keyframes { /* All keyframes */ }
+
+/* Utilities */
+.text-gradient { }
+.hover-lift { }
+.fade-in { }
+
+/* Responsive */
+@media { }
+```
+
+### JavaScript Features:
+```javascript
+// 1. Number counter animation
+function animateValue(element, start, end, duration) {}
+
+// 2. Chart initialization and real-time updates
+function initChart() {}
+function updateChart() {}
+
+// 3. Scroll animations (Intersection Observer)
+function setupScrollAnimations() {}
+
+// 4. Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {});
+
+// 5. Dynamic status updates
+function updateStatus() {}
+
+// 6. Loading state management
+function showLoading() {}
+function hideLoading() {}
+
+// 7. Responsive menu (if needed)
+function toggleMenu() {}
+```
+
+## 🎯 PREMIUM DETAILS TO INCLUDE
+
+1. **Loading Screen:**
+   - Animated Sensor Sentinel logo
+   - Progress bar with gradient
+   - Fade out after 2s
+
+2. **Easter Eggs:**
+   - Secret command palette (Cmd/Ctrl + K)
+   - Konami code for special effect
+   - Hidden developer tools
+
+3. **Performance:**
+   - Lazy load images
+   - Debounce scroll events
+   - RequestAnimationFrame for animations
+   - CSS will-change for transformed elements
+
+4. **Accessibility:**
+   - ARIA labels
+   - Keyboard navigation
+   - Focus indicators with custom styling
+   - Reduced motion media query support
+
+5. **SEO & Meta:**
+   - OpenGraph tags
+   - Structured data
+   - Meaningful alt texts
+   - Semantic HTML5
+
+## 🎬 FINAL POLISH
+
+### CSS Properties for Premium Feel:
+```css
+/* Smooth everything */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* Anti-aliasing */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hardware acceleration */
+.animated-element {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Backdrop filters */
+.glass {
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+```
+
+### Quality Checklist:
+- [ ] All animations 60fps
+- [ ] No layout shifts
+- [ ] Fast load time (<2s)
+- [ ] Smooth scrolling
+- [ ] No flickering
+- [ ] Proper contrast ratios
+- [ ] Cross-browser tested
+- [ ] Mobile-optimized
+- [ ] Touch gestures supported
+- [ ] Keyboard accessible
+
+Create a website that feels like a $100,000+ enterprise dashboard with every detail polished to perfection!
+```
+
+This comprehensive prompt should give any AI coding tool everything needed to create an absolutely premium, professional IoT monitoring dashboard!

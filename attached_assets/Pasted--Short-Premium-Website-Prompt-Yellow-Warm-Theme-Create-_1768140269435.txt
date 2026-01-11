@@ -1,0 +1,73 @@
+# Short Premium Website Prompt (Yellow/Warm Theme)
+
+```
+Create a premium IoT monitoring dashboard called "Sensor Sentinel" with these specifications:
+
+## DESIGN
+- **Dark theme**: Deep charcoal/black background (#0a0a0f, #131318)
+- **Colors**: 
+  - Primary: Golden yellow (#fbbf24, #f59e0b)
+  - Secondary: Amber (#f97316)
+  - Accent: Warm orange (#fb923c)
+  - Highlights: Lime green (#84cc16) for success
+  - Critical: Red (#ef4444)
+- **Glassmorphism cards**: backdrop-blur, semi-transparent, golden glowing borders
+- **Animated gradient background**: Moving yellow/orange/amber orbs with blur
+- **Typography**: Inter font family, bold numbers, uppercase labels
+
+## LAYOUT
+1. **Header**: Shield logo (golden) + "Sensor Sentinel" (gradient yellow-to-orange text) + status buttons
+2. **4 Metric Cards**:
+   - Processed Nodes: 50 (+12.6% in lime green)
+   - Total Anomalies: 0 (Critical in red)
+   - Sync Rate: 0.00% (Optimal in green)
+   - Mean Flux: 25.14 (-2.4% in orange)
+3. **Chart Section**: Animated golden-orange gradient waveform, "LIVE" indicator (red dot)
+4. **Footer**: Contact email (iot_anomali_detector@gmail.com), social icons, copyright
+
+## ANIMATIONS & EFFECTS
+- **Card hover**: Lift up, golden glow shadow, scale 1.02
+- **Buttons**: Ripple effect, golden glow on hover
+- **Numbers**: Count-up animation on load
+- **Chart**: Smooth animated line (yellow-to-orange gradient), real-time updates
+- **Background**: Slow-moving golden/amber gradient orbs, warm scan lines
+- **Badges**: Pulsing glow effect
+- **LIVE indicator**: Red dot with pulsing animation
+- **Border gradients**: Rotating yellow-orange-amber on hover
+
+## COLOR GRADIENTS
+```css
+--primary-gradient: linear-gradient(135deg, #fbbf24 0%, #f97316 100%);
+--card-gradient: linear-gradient(145deg, rgba(251,191,36,0.1) 0%, rgba(249,115,22,0.1) 100%);
+--glow-gradient: radial-gradient(circle, rgba(251,191,36,0.4), transparent 70%);
+--background-gradient: linear-gradient(180deg, #0a0a0f 0%, #1a1106 100%);
+--border-gradient: linear-gradient(90deg, #fbbf24, #f97316, #fb923c);
+```
+
+## PREMIUM TOUCHES
+- Smooth transitions (0.3s cubic-bezier)
+- Golden light leaks/rays in background
+- Glassmorphism with warm tint (blur(20px), rgba backgrounds with yellow tint)
+- Scroll-triggered fade-in animations
+- Custom golden scrollbar
+- Particle effects (golden sparkles optional)
+- Loading screen with animated logo
+- Responsive: 4-col → 2-col → 1-col
+
+## VISUAL STYLE
+- Cyberpunk meets luxury gold aesthetic
+- Warm, inviting but high-tech
+- Golden hour lighting feel
+- Shadows have warm orange tint
+- Text: White/cream (#fef3c7) on dark
+- Cards: Semi-transparent with golden borders
+- Chart line: 3px, smooth curves, gradient fill
+
+## TECH STACK
+- HTML5 + Modern CSS (Grid, Flexbox)
+- Chart.js for animated waveform
+- Vanilla JavaScript for interactions
+- Google Fonts: Inter + JetBrains Mono
+
+Make it feel like a premium gold-tier enterprise dashboard with warm, inviting energy while maintaining professional tech aesthetics!
+```
